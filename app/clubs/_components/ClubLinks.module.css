@@ -1,0 +1,19 @@
+.links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  
+.links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0 10px 0;
+    display: inline-flex;
+}
+  
+.links a img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}

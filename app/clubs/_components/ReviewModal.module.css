@@ -1,0 +1,83 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3EEFD;
+    width: 50%;
+    aspect-ratio: 1.1 / 1;
+    padding: 1% 2% 1% 2%;
+    border-radius: 2%;
+}
+
+.modalheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.modalheading button {
+    all: unset;
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+    font-size: 2.4vw;
+    font-weight: 200;
+    height: 2vw;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.modal input {
+    border: 1px solid #F3EEFD;
+    padding: 1%;
+    border-radius: 12px;
+    margin: 0.5% 0 0.5% 0;
+}
+
+.title {
+    width: 95%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post, .delete {
+    all: unset;
+    font-size: 0.9vw;
+    text-align: center;
+    width: 48%;
+    padding: 1%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 1%;
+}
+
+.post {
+    background-color: #582EC3;
+    border: 2px solid #582EC3;
+    color: white;
+    margin-left: 1%;
+}
+
+.delete {
+    background-color: white;
+    color: #582EC3;
+    border: 2px solid #582EC3;
+    margin-right: 1%;
+}

@@ -1,0 +1,434 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/[id]/clubpage.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.clubpage_poppins-regular__CbbKl {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.clubpage_poppins-medium__GeGrO {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.clubpage_poppins-semibold__DiJ2j {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.clubpage_clubpage__NXmhn {
+  font-family: "Poppins";
+  background-color: #F1EAFF;
+}
+
+.clubpage_clubheader__ja6Oy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 5% 0 5%;
+
+  height: 100px;
+  
+  background: rgb(224,136,245);
+  background: linear-gradient(90deg, rgba(224,136,245,1) 0%, rgba(55,24,183,1) 100%);
+}
+
+.clubpage_unipath__tLqIT {
+  color: white;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.clubpage_search__XDKj3 {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clubpage_searchbar__8WPLa {
+  border-radius: 60px;
+  border: solid 2px white;
+  outline: none;
+
+  height: 50px;
+  width: 500px;
+
+  font-family: "Poppins";
+  font-size: 18px;
+
+  padding-left: 25px;
+  padding-right: 250px;
+
+  filter: drop-shadow(0px 2px 2px #ababab);
+}
+
+.clubpage_submit__B50zG {
+  position: absolute;
+  right: 1%;
+  top: 12.5%;
+
+  background-color: #582EC3;
+  border: solid 1px #582EC3;
+  border-radius: 50px;
+  color: white;
+
+  font-family: "Poppins";
+  font-size: 16px;
+  padding: 8px 70px 8px 70px;
+
+  cursor: pointer;
+
+}
+
+.clubpage_feedback__NtJ5j {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+
+  color: #582EC3;
+  background-color: white;
+  border-radius: 35px;
+  border: none;
+
+  height: 50px;
+  width: 170px;
+
+  cursor: pointer;
+}
+
+.clubpage_content__JuZn8 {
+  display: flex;
+  align-items: flex-start;
+  gap: 2%;
+  margin: 2% 8% 2% 8%;
+}
+
+.clubpage_info__KFcCt {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  flex: 1 1;
+}
+
+.clubpage_clubname__x1ZP3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.clubpage_info__KFcCt img {
+  padding: 5px 35px 5px 35px;
+  border-radius: 30px;
+  border: solid 1px #EFEAF8;
+
+  display: block;
+  margin: auto;
+}
+
+.clubpage_rating__28h_1 {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.clubpage_rating__28h_1 h3{
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.clubpage_score__7KFVS {
+  font-size: 40px;
+  color: #582EC3;
+}
+
+.clubpage_numreviews__VYsMY {
+  margin-top: 0;
+}
+
+.clubpage_number___A3DD {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.clubpage_main__7BMs0 {
+  flex: 4 1;
+}
+
+.clubpage_about__rG_n2 {
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+  font-size: 16px;
+  margin-bottom: 2%;
+}
+
+.clubpage_about__rG_n2 h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.clubpage_careers__sruqg {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 14px;
+}
+
+.clubpage_careers__sruqg h4 {
+  font-weight: 600;
+}
+
+.clubpage_tags__NNdWp {
+  display: flex;
+  gap: 10px;
+}
+
+.clubpage_tag___YrSk {
+  background-color: #EFEAF8;
+  padding: 5px 25px 5px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.clubpage_starheader__NZGkO {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 15px;
+}
+
+.clubpage_stars___oB3U{
+  background-color: #EFEAF8;
+  display: flex;
+  flex-direction: column;
+
+  width: 70px;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 30px;
+  /* position: relative; */
+}
+
+.clubpage_stars___oB3U h1 {
+  font-size: 40px;
+}
+
+.clubpage_stars___oB3U p {
+  margin-top: -10px;
+}
+
+.clubpage_outoffive__bfdA9 {
+  font-size: 14px;
+  padding-left: 3%;
+  color: #96909F; 
+  font-weight: 500;
+
+  right: 20px;
+  top: 40%;
+}
+
+.clubpage_starcontent__ma3lX h1 {
+  font-size: 22px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.clubpage_starcontent__ma3lX p {
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.clubpage_stars___oB3U, .clubpage_starcontent__ma3lX {
+  margin-right: 20px;
+}
+
+.clubpage_startdate__I68Tz {
+  color: #96909F;
+  margin-left: auto;
+}
+
+.clubpage_reviewcontent__dfyKn {
+  padding: 30px 10px 0px 0;
+}
+
+.clubpage_reviewcontent__dfyKn h1 {
+  font-size: 22px;
+}
+
+.clubpage_reviewdivider__tVmmp {
+  margin: 2% 0 2% 0;
+  border: none;
+  border-top: 2px solid #F1EAFF;
+}
+
+.clubpage_footer__qzee6 {
+  background-color: #582EC3;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.clubpage_footer__qzee6 h1 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.clubpage_footer__qzee6 p {
+  margin-top: 5px;
+}
+
+.clubpage_footer__qzee6 a {
+  color: white;
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/ClubLinks.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.ClubLinks_links__3F6aI {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  
+.ClubLinks_links__3F6aI a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0 10px 0;
+    display: inline-flex;
+}
+  
+.ClubLinks_links__3F6aI a img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/WriteReview.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.WriteReview_button__NBGj9 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .WriteReview_review__ftJEV {
+    color: white;
+    background-color: #582EC3;
+    border: solid 1px #582EC3;
+    border-radius: 35px;
+  
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 30px 10px 30px;
+  
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  
+  .WriteReview_review__ftJEV img {
+    border: none;
+    padding: 0;
+    padding-left: 8px;
+  }
+  
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/ReviewModal.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.ReviewModal_overlay__71Mqu {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.ReviewModal_modal__llIPk {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3EEFD;
+    width: 50%;
+    aspect-ratio: 1.1 / 1;
+    padding: 1% 2% 1% 2%;
+    border-radius: 2%;
+}
+
+.ReviewModal_modalheading__xkEQr {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.ReviewModal_modalheading__xkEQr button {
+    all: unset;
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+    font-size: 2.4vw;
+    font-weight: 200;
+    height: 2vw;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.ReviewModal_modal__llIPk input {
+    border: 1px solid #F3EEFD;
+    padding: 1%;
+    border-radius: 12px;
+    margin: 0.5% 0 0.5% 0;
+}
+
+.ReviewModal_title__0ZUGe {
+    width: 95%;
+}
+
+.ReviewModal_buttons__JHB8H {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ReviewModal_post__HXnZF, .ReviewModal_delete__fbD9k {
+    all: unset;
+    font-size: 0.9vw;
+    text-align: center;
+    width: 48%;
+    padding: 1%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 1%;
+}
+
+.ReviewModal_post__HXnZF {
+    background-color: #582EC3;
+    border: 2px solid #582EC3;
+    color: white;
+    margin-left: 1%;
+}
+
+.ReviewModal_delete__fbD9k {
+    background-color: white;
+    color: #582EC3;
+    border: 2px solid #582EC3;
+    margin-right: 1%;
+}
+
