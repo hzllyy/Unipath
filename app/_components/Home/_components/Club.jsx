@@ -1,22 +1,38 @@
 import React from "react";
-import "./Club.scss";
+import "./Club.css";
 
-const Club = ({ image, name, rating, numreviews, description, tags}) => {
+const Club = ({ image, name, social, overall, time, numreviews, description, tags}) => {
     return (
         <section className="club">
-          <img src={ image } alt={'${ name } logo'} className="club-image"/>
+          <img src={ image } alt={`${ name } logo`} className="club-image"/>
           <h2 className="clubname">{ name }</h2>
 
           <div className="stars">
             <div className="rating">
-              <img src="/images/star.png"></img>
-              <h3 className="score">{ rating }</h3>
-              <h3>/</h3>
-              <h3>5</h3>
+              <div className="outof">
+                <h3 className="score">{ social }</h3>
+                <h3>/</h3>
+                <h3>5</h3>
+              </div>
+              <p className="desc">Social</p>
             </div>
 
-            <div className="numreview">
-              <p>{ numreviews } Reviews</p>
+            <img src="images/line.png" alt="divider"></img>
+
+            <div className="rating">
+              <div className="outof">
+                <h3 className="score">{ overall }</h3>
+                <h3>/</h3>
+                <h3>5</h3>
+              </div>
+              <p className="desc">Overall</p>
+            </div>
+
+            <img src="images/line.png" alt="divider"></img>
+
+            <div className="rating">
+              <h3 className="score">{ time }</h3>
+              <p className="desc">Time Cmt</p>
             </div>
           </div>
 

@@ -19,8 +19,12 @@
 }
 
 .clubpage {
+  margin: -0.75%;
+}
+
+.clubpage {
   font-family: "Poppins";
-  background-color: #F1EAFF;
+  background-color: #F9F9F9;
 }
 
 .clubheader {
@@ -28,42 +32,21 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 5% 0 5%;
+  padding-left: 3%;
+  padding-right: 3%;
 
-  height: 100px;
-  
   background: rgb(224,136,245);
   background: linear-gradient(90deg, rgba(224,136,245,1) 0%, rgba(55,24,183,1) 100%);
+
+  height: 7em;
+  color: white;
+  text-align: center;
 }
 
 .unipath {
   color: white;
-  font-weight: 600;
-  font-size: 35px;
-}
-
-.search {
-  position: absolute;
-  top: 7%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.searchbar {
-  border-radius: 60px;
-  border: solid 2px white;
-  outline: none;
-
-  height: 50px;
-  width: 500px;
-
-  font-family: "Poppins";
-  font-size: 18px;
-
-  padding-left: 25px;
-  padding-right: 250px;
-
-  filter: drop-shadow(0px 2px 2px #ababab);
+  font-weight: 500;
+  font-size: 2em;
 }
 
 .submit {
@@ -78,24 +61,24 @@
 
   font-family: "Poppins";
   font-size: 16px;
-  padding: 8px 70px 8px 70px;
+  padding-left: 3%;
+  padding-right: 3%;
 
   cursor: pointer;
-
 }
 
 .feedback {
   font-family: "Poppins";
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 1em;
 
   color: #582EC3;
   background-color: white;
   border-radius: 35px;
   border: none;
 
-  height: 50px;
-  width: 170px;
+  height: 2em;
+  width: 10em;
 
   cursor: pointer;
 }
@@ -105,6 +88,8 @@
   align-items: flex-start;
   gap: 2%;
   margin: 2% 8% 2% 8%;
+
+  filter: drop-shadow(0px 0px 3px #ababab);
 }
 
 .info {
@@ -115,7 +100,7 @@
 }
 
 .clubname {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 600;
   margin-bottom: 0;
 }
@@ -129,30 +114,13 @@
   margin: auto;
 }
 
-.rating {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
-}
-
-.rating h3{
-  font-weight: 600;
-  margin-top: 25px;
-  margin-bottom: 0;
-}
-
-.score {
-  font-size: 40px;
-  color: #582EC3;
-}
-
 .numreviews {
   margin-top: 0;
 }
 
 .number {
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .main {
@@ -162,14 +130,15 @@
 .about {
   background-color: white;
   border-radius: 30px;
-  padding: 30px;
-  font-size: 16px;
+  padding: 2em;
+  font-size: 1em;
+  font-weight: 350;
   margin-bottom: 2%;
 }
 
 .about h1 {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 1.7em;
+  font-weight: 550;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -189,6 +158,8 @@
 .tags {
   display: flex;
   gap: 10px;
+  font-size: 0.99em;
+  font-weight: 350;
 }
 
 .tag {
@@ -206,48 +177,10 @@
 }
 
 .stars{
-  background-color: #EFEAF8;
   display: flex;
-  flex-direction: column;
-
-  width: 70px;
-  border-radius: 20px;
-  padding: 5px;
-  padding-left: 30px;
-  /* position: relative; */
-}
-
-.stars h1 {
-  font-size: 40px;
-}
-
-.stars p {
-  margin-top: -10px;
-}
-
-.outoffive {
-  font-size: 14px;
-  padding-left: 3%;
-  color: #96909F; 
-  font-weight: 500;
-
-  right: 20px;
-  top: 40%;
-}
-
-.starcontent h1 {
-  font-size: 22px;
-  line-height: 20px;
-  padding-top: 10px;
-}
-
-.starcontent p {
-  font-size: 14px;
-  line-height: 10px;
-}
-
-.stars, .starcontent {
-  margin-right: 20px;
+  justify-content: space-between;
+  padding: 0 2% 0 2%;
+  width: 100%;
 }
 
 .startdate {
@@ -255,12 +188,8 @@
   margin-left: auto;
 }
 
-.reviewcontent {
-  padding: 30px 10px 0px 0;
-}
-
-.reviewcontent h1 {
-  font-size: 22px;
+.reviewContent h1 {
+  font-size: 1.3em;
 }
 
 .reviewdivider {
@@ -277,14 +206,103 @@
 }
 
 .footer h1 {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.5em;
   margin-bottom: 0;
 }
 
 .footer p {
-  margin-top: 5px;
+  margin-top: 0.2%;
+  font-weight: 300;
 }
 
 .footer a {
   color: white;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.rating h3{
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: -10%;
+}
+
+.stars {
+  display: flex;
+
+  color: #B7B7B7;
+  align-items: baseline;
+  text-align: center;
+  font-weight: 400;
+}
+
+.score, .time {
+  font-size: 1.8em;
+  color: black;
+}
+
+.outof {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5%;
+}
+
+.desc {
+  color: #B7B7B7;
+}
+
+.outofReview {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: #B7B7B7;
+  gap: 5%;
+}
+
+.reviews {
+  display: flex;
+  gap: 5%;
+
+  padding: 2%;
+}
+
+.starcontent {
+  display: flex;
+  gap: 4%;
+  font-size: 1em;
+  font-weight: 350;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.reviewheader {
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+
+  line-height: 10%;
+}
+
+.reviewcontent {
+  font-size: 1em;
+  font-weight: 350;
+}
+
+.postdate {
+  color: #B7B7B7;
+}
+
+.scoreReview {
+  font-size: 2.2em;
+  color: black;
+  font-weight: 500 !important;
+  line-height: 1rem;
 }

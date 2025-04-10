@@ -5,7 +5,7 @@ const ClubLinks = ({ website, websiteLabel, instagram, instagramHandle, facebook
     return (
         <div className={styles.links}>
             { website && (
-                <a href={ website} target="_blank" rel="noopener noreferrer">
+                <a href={ website } target="_blank" rel="noopener noreferrer">
                     <img src="/images/web.png" alt="website icon" />
                     {websiteLabel}
                 </a>

@@ -1,0 +1,83 @@
+  .club {
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 30px;
+    padding: 20px;
+    cursor: pointer;
+  
+    filter: drop-shadow(0px 0px 3px #ababab);
+  }
+  
+  .club img {
+    display: block;
+    margin: auto;
+  }
+  
+  .clubname {
+    font-weight: 400;
+    font-size: 27px;
+    margin: 0;
+  }
+  
+  .rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  
+  .rating h3{
+    font-weight: 400;
+    margin: 3%;
+    text-align: center;
+    margin-bottom: -10%;
+  }
+  
+  .stars {
+    display: flex;
+
+    color: #B7B7B7;
+    align-items: baseline;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .outof {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  .desc {
+    color: #B7B7B7;
+  }
+  
+  .numreview {
+    font-weight: 500;
+    color: #C0ADD8;
+  }
+
+  .score {
+    font-size: 2em;
+    color: black;
+  }
+  
+  .description {
+    margin-top: 1%;
+    font-weight: 300;
+  }
+  
+  .categories {
+    display: flex;
+    gap: 1%;
+  }
+
+  .category {
+    background-color: #F1EAFF;
+    border: solid 1px #F1EAFF;
+    padding: 6px 12px 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  

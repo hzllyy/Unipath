@@ -22,8 +22,12 @@
 }
 
 .clubpage_clubpage__NXmhn {
+  margin: -0.75%;
+}
+
+.clubpage_clubpage__NXmhn {
   font-family: "Poppins";
-  background-color: #F1EAFF;
+  background-color: #F9F9F9;
 }
 
 .clubpage_clubheader__ja6Oy {
@@ -31,42 +35,21 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 5% 0 5%;
+  padding-left: 3%;
+  padding-right: 3%;
 
-  height: 100px;
-  
   background: rgb(224,136,245);
   background: linear-gradient(90deg, rgba(224,136,245,1) 0%, rgba(55,24,183,1) 100%);
+
+  height: 7em;
+  color: white;
+  text-align: center;
 }
 
 .clubpage_unipath__tLqIT {
   color: white;
-  font-weight: 600;
-  font-size: 35px;
-}
-
-.clubpage_search__XDKj3 {
-  position: absolute;
-  top: 7%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.clubpage_searchbar__8WPLa {
-  border-radius: 60px;
-  border: solid 2px white;
-  outline: none;
-
-  height: 50px;
-  width: 500px;
-
-  font-family: "Poppins";
-  font-size: 18px;
-
-  padding-left: 25px;
-  padding-right: 250px;
-
-  filter: drop-shadow(0px 2px 2px #ababab);
+  font-weight: 500;
+  font-size: 2em;
 }
 
 .clubpage_submit__B50zG {
@@ -81,24 +64,24 @@
 
   font-family: "Poppins";
   font-size: 16px;
-  padding: 8px 70px 8px 70px;
+  padding-left: 3%;
+  padding-right: 3%;
 
   cursor: pointer;
-
 }
 
 .clubpage_feedback__NtJ5j {
   font-family: "Poppins";
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 1em;
 
   color: #582EC3;
   background-color: white;
   border-radius: 35px;
   border: none;
 
-  height: 50px;
-  width: 170px;
+  height: 2em;
+  width: 10em;
 
   cursor: pointer;
 }
@@ -108,6 +91,8 @@
   align-items: flex-start;
   gap: 2%;
   margin: 2% 8% 2% 8%;
+
+  filter: drop-shadow(0px 0px 3px #ababab);
 }
 
 .clubpage_info__KFcCt {
@@ -118,7 +103,7 @@
 }
 
 .clubpage_clubname__x1ZP3 {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 600;
   margin-bottom: 0;
 }
@@ -132,30 +117,13 @@
   margin: auto;
 }
 
-.clubpage_rating__28h_1 {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
-}
-
-.clubpage_rating__28h_1 h3{
-  font-weight: 600;
-  margin-top: 25px;
-  margin-bottom: 0;
-}
-
-.clubpage_score__7KFVS {
-  font-size: 40px;
-  color: #582EC3;
-}
-
 .clubpage_numreviews__VYsMY {
   margin-top: 0;
 }
 
 .clubpage_number___A3DD {
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .clubpage_main__7BMs0 {
@@ -165,14 +133,15 @@
 .clubpage_about__rG_n2 {
   background-color: white;
   border-radius: 30px;
-  padding: 30px;
-  font-size: 16px;
+  padding: 2em;
+  font-size: 1em;
+  font-weight: 350;
   margin-bottom: 2%;
 }
 
 .clubpage_about__rG_n2 h1 {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 1.7em;
+  font-weight: 550;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -192,6 +161,8 @@
 .clubpage_tags__NNdWp {
   display: flex;
   gap: 10px;
+  font-size: 0.99em;
+  font-weight: 350;
 }
 
 .clubpage_tag___YrSk {
@@ -209,48 +180,10 @@
 }
 
 .clubpage_stars___oB3U{
-  background-color: #EFEAF8;
   display: flex;
-  flex-direction: column;
-
-  width: 70px;
-  border-radius: 20px;
-  padding: 5px;
-  padding-left: 30px;
-  /* position: relative; */
-}
-
-.clubpage_stars___oB3U h1 {
-  font-size: 40px;
-}
-
-.clubpage_stars___oB3U p {
-  margin-top: -10px;
-}
-
-.clubpage_outoffive__bfdA9 {
-  font-size: 14px;
-  padding-left: 3%;
-  color: #96909F; 
-  font-weight: 500;
-
-  right: 20px;
-  top: 40%;
-}
-
-.clubpage_starcontent__ma3lX h1 {
-  font-size: 22px;
-  line-height: 20px;
-  padding-top: 10px;
-}
-
-.clubpage_starcontent__ma3lX p {
-  font-size: 14px;
-  line-height: 10px;
-}
-
-.clubpage_stars___oB3U, .clubpage_starcontent__ma3lX {
-  margin-right: 20px;
+  justify-content: space-between;
+  padding: 0 2% 0 2%;
+  width: 100%;
 }
 
 .clubpage_startdate__I68Tz {
@@ -258,12 +191,8 @@
   margin-left: auto;
 }
 
-.clubpage_reviewcontent__dfyKn {
-  padding: 30px 10px 0px 0;
-}
-
-.clubpage_reviewcontent__dfyKn h1 {
-  font-size: 22px;
+.clubpage_reviewContent__IYDQ0 h1 {
+  font-size: 1.3em;
 }
 
 .clubpage_reviewdivider__tVmmp {
@@ -280,16 +209,105 @@
 }
 
 .clubpage_footer__qzee6 h1 {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.5em;
   margin-bottom: 0;
 }
 
 .clubpage_footer__qzee6 p {
-  margin-top: 5px;
+  margin-top: 0.2%;
+  font-weight: 300;
 }
 
 .clubpage_footer__qzee6 a {
   color: white;
+}
+
+.clubpage_rating__28h_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.clubpage_rating__28h_1 h3{
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: -10%;
+}
+
+.clubpage_stars___oB3U {
+  display: flex;
+
+  color: #B7B7B7;
+  align-items: baseline;
+  text-align: center;
+  font-weight: 400;
+}
+
+.clubpage_score__7KFVS, .clubpage_time__kTobM {
+  font-size: 1.8em;
+  color: black;
+}
+
+.clubpage_outof__nvuUs {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5%;
+}
+
+.clubpage_desc__CpetU {
+  color: #B7B7B7;
+}
+
+.clubpage_outofReview__dQMRN {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: #B7B7B7;
+  gap: 5%;
+}
+
+.clubpage_reviews__B2LWw {
+  display: flex;
+  gap: 5%;
+
+  padding: 2%;
+}
+
+.clubpage_starcontent__ma3lX {
+  display: flex;
+  gap: 4%;
+  font-size: 1em;
+  font-weight: 350;
+}
+
+.clubpage_label__5ITQ_ {
+  font-weight: 500;
+}
+
+.clubpage_reviewheader__d3Ngc {
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+
+  line-height: 10%;
+}
+
+.clubpage_reviewcontent__dfyKn {
+  font-size: 1em;
+  font-weight: 350;
+}
+
+.clubpage_postdate__qsNwI {
+  color: #B7B7B7;
+}
+
+.clubpage_scoreReview__tbiA8 {
+  font-size: 2.2em;
+  color: black;
+  font-weight: 500 !important;
+  line-height: 1rem;
 }
 
 /*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -349,7 +367,7 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/ReviewModal.module.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************/
 .ReviewModal_overlay__71Mqu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -367,15 +385,17 @@
     transform: translate(-50%, -50%);
     background-color: #F3EEFD;
     width: 50%;
-    aspect-ratio: 1.1 / 1;
+    aspect-ratio: 1.2 / 1;
     padding: 1% 2% 1% 2%;
-    border-radius: 2%;
+    border-radius: 20px;
 }
 
 .ReviewModal_modalheading__xkEQr {
     display: flex;
     justify-content: space-between;
     align-items: top;
+
+    font-size: 1.2em;
 }
 
 .ReviewModal_modalheading__xkEQr button {
@@ -385,20 +405,83 @@
     color: black;
     font-size: 2.4vw;
     font-weight: 200;
-    height: 2vw;
+    height: 1.2em;
     cursor: pointer;
     transform: rotate(45deg);
 }
 
-.ReviewModal_modal__llIPk input {
+.ReviewModal_formContent__g52DJ {
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+        "a a"
+        "b c"
+        "d e"
+        "f g"
+        "h h"
+        "h h"
+        "h h"
+        "h h"
+        "i i";
+
+    align-items: center;
+}
+
+.ReviewModal_modal__llIPk input, .ReviewModal_modal__llIPk textarea {
     border: 1px solid #F3EEFD;
-    padding: 1%;
-    border-radius: 12px;
-    margin: 0.5% 0 0.5% 0;
+    padding: 0.5% 3% 0.5% 3%;
+    border-radius: 20px;
+    font-size: 0.90em;
+    font-family: "Poppins";
+
+    margin: 0.5%;
+    text-align: start;
+    vertical-align: top;
+    line-height: normal;
+}
+
+.ReviewModal_modal__llIPk textarea {
+    padding-top: 3%;
 }
 
 .ReviewModal_title__0ZUGe {
-    width: 95%;
+    grid-area: a;
+    height: 2.5em;
+}
+
+.ReviewModal_overall__Tx2C8 {
+    grid-area: b;
+}
+
+.ReviewModal_social__cOgKp {
+    grid-area: c;
+}
+
+.ReviewModal_career__6r0PV {
+    grid-area: d;
+    height: 2.5em;
+
+}
+
+.ReviewModal_role__eb4QS {
+    grid-area: e;
+    height: 2.5em;
+    width: 90%;
+}
+
+.ReviewModal_duration__gimAE {
+    grid-area: f;
+}
+
+.ReviewModal_time__V7opj {
+    grid-area: f;
+}
+
+.ReviewModal_content__3OLXP {
+    grid-area: h;
+    height: 14em;
 }
 
 .ReviewModal_buttons__JHB8H {
@@ -408,7 +491,7 @@
 
 .ReviewModal_post__HXnZF, .ReviewModal_delete__fbD9k {
     all: unset;
-    font-size: 0.9vw;
+    font-size: 1em;
     text-align: center;
     width: 48%;
     padding: 1%;
@@ -432,3 +515,101 @@
     margin-right: 1%;
 }
 
+.ReviewModal_clubName__37Po_ {
+    color: #582EC3;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/StarRating.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.StarRating_starContainer__Q_utq {
+    background-color: white;
+    border-radius: 18px;
+    padding: 1% 2% 1% 2%;
+    font-size: 0.90em;
+    font-weight: 300;
+    width: 90%;
+    height: 2.5em;
+    margin-left: 1.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/TermPick.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.TermPick_termInputContainer__t8fGD {
+    position: relative;
+}
+
+.TermPick_termInput__7NF_r {
+    display: flex;
+    background-color: white;
+    border-radius: 18px;
+    height: 2.9em;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 0.9em;
+}
+
+.TermPick_termInput__7NF_r div {
+    width: 100%;
+    text-align: center;
+}
+
+.TermPick_termList__sSt0y {
+    font-size: 0.9em;
+    position: absolute;
+
+    background-color: white;
+    padding: 1% 3% 1% 3%;
+}
+
+.TermPick_dropDownItem__SiAsp:hover{
+    cursor: pointer;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/TimePick.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.TimePick_button__DgAPJ {
+    background-color: white; 
+
+    width: 95%;
+
+    border: 1px solid #F3EEFD;
+    border-radius: 20px;
+    padding: 2.75% 0 2.75% 0;
+    margin: 0 2% 0 2%;;
+    font-size: 0.90em;
+    font-family: "Poppins";
+
+    cursor: pointer;
+    text-align: left;
+    padding-left: 15px;
+    color: #808080;
+}
+
+.TimePick_options__UG7Q8 {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 2%;
+    padding: 0;
+
+    background-color: white;
+    border: solid 3px #F3EEFD;
+    border-radius: 15px;
+}
+
+.TimePick_options__UG7Q8 li {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.TimePick_options__UG7Q8 li:hover {
+    background-color: #F3EEFD;
+}

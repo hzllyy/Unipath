@@ -1,0 +1,39 @@
+.button {
+    background-color: white; 
+
+    width: 95%;
+
+    border: 1px solid #F3EEFD;
+    border-radius: 20px;
+    padding: 2.75% 0 2.75% 0;
+    margin: 0 2% 0 2%;;
+    font-size: 0.90em;
+    font-family: "Poppins";
+
+    cursor: pointer;
+    text-align: left;
+    padding-left: 15px;
+    color: #808080;
+}
+
+.options {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 2%;
+    padding: 0;
+
+    background-color: white;
+    border: solid 3px #F3EEFD;
+    border-radius: 15px;
+}
+
+.options li {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.options li:hover {
+    background-color: #F3EEFD;
+}

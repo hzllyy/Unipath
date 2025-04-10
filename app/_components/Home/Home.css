@@ -20,58 +20,69 @@
 
 body {
   font-family: "Poppins";
-  background-color: #F1EAFF;
+  background-color: #F9F9F9;
+  margin: 0;
 }
 
 .header {
   background: rgb(224,136,245);
   background: linear-gradient(90deg, rgba(224,136,245,1) 0%, rgba(55,24,183,1) 100%);
 
-  height: 486px;
+  height: 28em;
   color: white;
   text-align: center;
-}
-
-#unipath {
-  margin: 20px;
 }
 
 #firstLine {
   display: flex;
   justify-content: space-between;
-  align-items: first baseline;
-  font-weight: 600;
-  font-size: 40px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1em;
 
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 #rate {
-  font-weight: 400;
-  font-size: 35px;
+  font-weight: 300;
+  font-size: 2em;
   margin-bottom: 0;
-  padding-top: 50px;
+  padding-top: 4%;
 }
 
 #ucd {
   font-weight: 500;
-  font-size: 60px;
+  font-size: 3em;
   margin-top: 0;
+}
+
+#feedback {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+#feedback-txt {
+  font-size: 0.5em;
+  font-weight: 200;
+
+  width: 20em;
 }
 
 #feedback-btn {
   font-family: "Poppins";
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 0.5em;
 
   color: #582EC3;
   background-color: white;
   border-radius: 35px;
   border: none;
 
-  height: 50px;
-  width: 170px;
+  height: 2em;
+  width: 10em;
 
   cursor: pointer;
 }
@@ -125,9 +136,9 @@ input::placeholder {
   color: #582EC3;
   font-weight: 500;
 
-  padding-top: 100px;
+  padding-top: 5%;
   text-align: center;
-  font-size: 35px;
+  font-size: 2em;
 }
 
 #clubs {
@@ -138,8 +149,13 @@ input::placeholder {
   margin-right: 6%;
 }
 
-#spiel {
+#contact {
   margin: 3% 6% 3% 6%;
+  font-weight: 350;
+}
+
+#contact a {
+  color: #582EC3;
 }
 
 footer {
@@ -150,12 +166,14 @@ footer {
 }
 
 footer h1 {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.5em;
   margin-bottom: 0;
 }
 
 footer p {
-  margin-top: 5px;
+  margin-top: 0.2%;
+  font-weight: 300;
 }
 
 footer a {

@@ -23,58 +23,69 @@
 
 body {
   font-family: "Poppins";
-  background-color: #F1EAFF;
+  background-color: #F9F9F9;
+  margin: 0;
 }
 
 .header {
   background: rgb(224,136,245);
   background: linear-gradient(90deg, rgba(224,136,245,1) 0%, rgba(55,24,183,1) 100%);
 
-  height: 486px;
+  height: 28em;
   color: white;
   text-align: center;
-}
-
-#unipath {
-  margin: 20px;
 }
 
 #firstLine {
   display: flex;
   justify-content: space-between;
-  align-items: first baseline;
-  font-weight: 600;
-  font-size: 40px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1em;
 
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 #rate {
-  font-weight: 400;
-  font-size: 35px;
+  font-weight: 300;
+  font-size: 2em;
   margin-bottom: 0;
-  padding-top: 50px;
+  padding-top: 4%;
 }
 
 #ucd {
   font-weight: 500;
-  font-size: 60px;
+  font-size: 3em;
   margin-top: 0;
+}
+
+#feedback {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+#feedback-txt {
+  font-size: 0.5em;
+  font-weight: 200;
+
+  width: 20em;
 }
 
 #feedback-btn {
   font-family: "Poppins";
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 0.5em;
 
   color: #582EC3;
   background-color: white;
   border-radius: 35px;
   border: none;
 
-  height: 50px;
-  width: 170px;
+  height: 2em;
+  width: 10em;
 
   cursor: pointer;
 }
@@ -128,9 +139,9 @@ input::placeholder {
   color: #582EC3;
   font-weight: 500;
 
-  padding-top: 100px;
+  padding-top: 5%;
   text-align: center;
-  font-size: 35px;
+  font-size: 2em;
 }
 
 #clubs {
@@ -141,8 +152,13 @@ input::placeholder {
   margin-right: 6%;
 }
 
-#spiel {
+#contact {
   margin: 3% 6% 3% 6%;
+  font-weight: 350;
+}
+
+#contact a {
+  color: #582EC3;
 }
 
 footer {
@@ -153,12 +169,14 @@ footer {
 }
 
 footer h1 {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.5em;
   margin-bottom: 0;
 }
 
 footer p {
-  margin-top: 5px;
+  margin-top: 0.2%;
+  font-weight: 300;
 }
 
 footer a {
@@ -173,71 +191,89 @@ footer a {
   color: inherit; /* Inherit color from parent */
   text-decoration: none; /* Remove underline */
 }
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./app/_components/Home/_components/Club.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.club {
-  background-color: white;
-  border: solid 1px white;
-  border-radius: 30px;
-  padding: 20px;
-  cursor: pointer;
-  filter: drop-shadow(0px 0px 3px #ababab);
-}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/_components/Home/_components/Club.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+  .club {
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 30px;
+    padding: 20px;
+    cursor: pointer;
+  
+    filter: drop-shadow(0px 0px 3px #ababab);
+  }
+  
+  .club img {
+    display: block;
+    margin: auto;
+  }
+  
+  .clubname {
+    font-weight: 400;
+    font-size: 27px;
+    margin: 0;
+  }
+  
+  .rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  
+  .rating h3{
+    font-weight: 400;
+    margin: 3%;
+    text-align: center;
+    margin-bottom: -10%;
+  }
+  
+  .stars {
+    display: flex;
 
-.club img {
-  display: block;
-  margin: auto;
-}
+    color: #B7B7B7;
+    align-items: baseline;
+    text-align: center;
+    font-weight: 400;
+  }
 
-.clubname {
-  font-weight: 500;
-  font-size: 27px;
-  color: #582EC3;
-  margin: 0;
-}
+  .outof {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 10%;
+  }
 
-.rating {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
-  color: #582EC3;
-  margin: 5px;
-}
+  .desc {
+    color: #B7B7B7;
+  }
+  
+  .numreview {
+    font-weight: 500;
+    color: #C0ADD8;
+  }
 
-.rating h3 {
-  font-weight: 500;
-  margin: 5px;
-}
+  .score {
+    font-size: 2em;
+    color: black;
+  }
+  
+  .description {
+    margin-top: 1%;
+    font-weight: 300;
+  }
+  
+  .categories {
+    display: flex;
+    gap: 1%;
+  }
 
-.stars {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.numreview {
-  font-weight: 500;
-  color: #C0ADD8;
-}
-
-.score {
-  font-size: 30px;
-}
-
-.description {
-  margin-top: 5px;
-}
-
-.categories {
-  display: flex;
-  gap: 5px;
-}
-
-.category {
-  background-color: #F1EAFF;
-  border: solid 1px #F1EAFF;
-  padding: 6px 12px 6px 12px;
-  border-radius: 15px;
-  cursor: pointer;
-}
+  .category {
+    background-color: #F1EAFF;
+    border: solid 1px #F1EAFF;
+    padding: 6px 12px 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  

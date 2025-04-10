@@ -1,4 +1,4 @@
-// File: C:\Users\Enjia\Unipath\app\clubs\[id]\page.jsx
+// File: /Users/hollyzheng/unipath/app/clubs/[id]/page.jsx
 import * as entry from '../../../../../app/clubs/[id]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -14,13 +14,22 @@ const ClubPage = () => {
     const club = clubs.find((c) => c.id === id);
 
     const [reviews, setReviews] = useState(club.reviews || []);
+    const [selectedClub, setSelectedClub] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const handleOpenModal = () => setIsModalOpen(true);
-    const handleCloseModal = () => setIsModalOpen(false);
+    const handleOpenModal = (club) => {
+        setSelectedClub(club);
+        setIsModalOpen(true);
+    }
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+        setSelectedClub(null);
+    }
 
     const handleSubmitReview = (newReview) => {
         setReviews([...reviews, newReview]);
+        handleCloseModal();
     };
 
     if (!club) return <h1>Club not found</h1>;
@@ -29,52 +38,12 @@ const ClubPage = () => {
         <section className={styles.clubpage}>
 
             <header className={styles.clubheader}>
-                <p className={styles.unipath}>Unipath</p>
-
-                {/* <form className={styles.search}>
-                    <input type="text" className={styles.searchbar} autoComplete="off" placeholder="Search by club, major, area of interest, etc."></input>
-
-                    <input type="submit" className={styles.submit} value="    Search" style={{
-                    backgroundImage: "url('/images/mg.png')",
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'top 11px left 60px',
-                    }}/>
-                </form> */}
+                <p className={styles.unipath}>ClubReview</p>
 
                 <button className={styles.feedback}>Feedback</button>
             </header>
 
             <section className={styles.content}>
-                <section className={styles.info}>
-                    <img src={ club.image } alt={`${ club.name } logo`}/>
-                    <p className={styles.clubname}>{ club.name }</p>
-
-                    <div className={styles.rating}>
-                    <h3 className={styles.score}>{ club.rating }</h3>
-                    <h3>/</h3>
-                    <h3>5</h3>
-                    </div>
-
-                    <p className={styles.numreviews}>Based on <span className={ styles.number }> { club.numreviews } reviews</span></p>
-
-                    <ClubLinks
-                        website={club.website}
-                        websiteLabel={club.websiteLabel}
-                        instagram={club.instagram}
-                        instagramHandle={club.instagramHandle}
-                        facebook={club.facebook}
-                        facebookName={club.facebookName}
-                        email={club.email}
-                        username={club.username}
-                    />
-
-                    <div>
-                        <WriteReview onClick={handleOpenModal} />
-                        <ReviewModal isOpen={isModalOpen} onClose={handleCloseModal} onSubmit={handleSubmitReview} />
-
-                    </div>
-            
-                </section>
 
                 <section className={styles.main}>
                     <section className={styles.about}>
@@ -102,36 +71,55 @@ const ClubPage = () => {
 
                     <section className={styles.about}>
                         <h1>Reviews</h1>
-                        {club.reviews.length === 0 ? (
+                        {reviews.length === 0 ? (
                             <p>No reviews yet. Be the first to review!</p>
                         ) : (
-                            club.reviews.map((review, index) => (
+                            reviews.map((review, index) => (
                                 <div key={index} className={styles.reviews}>
-                                    <div className={styles.reviews}>
-                                        <div className={styles.starheader}>
-                                            <div className={styles.stars}>
-                                                <h1>{ review.rating } <span className={styles.outoffive}>/ 5</span> </h1>
-                                                <p>Stars</p>
+                                    <div className={styles.starheaderReview}>
+                                        
+                                        <div className={styles.rating}>
+                                            <div className={styles.outofReview}>
+                                                <h3 className={styles.scoreReview}>{ review.overall }</h3>
+                                                <h3>/</h3>
+                                                <h3>5</h3>
                                             </div>
-                                            <div className={styles.starcontent}>
-                                                <h1>{ review.role }</h1>
-                                                <p>{ review.duration }</p>
-                                                <p>{ review.position }</p>
-                                            </div>
+                                            <p className={styles.desc}>Overall</p>
+                                        </div>
 
-                                            <p className={styles.startdate}>Posted on { review.date }</p>
+                                        <div className={styles.rating}>
+                                            <div className={styles.outofReview}>
+                                                <h3 className={styles.scoreReview}>{ review.social }</h3>
+                                                <h3>/</h3>
+                                                <h3>5</h3>
+                                            </div>
+                                            <p className={styles.desc}>Social</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div className={styles.reviewContent}>
+                                        <div className={styles.reviewheader}>
+                                            <h1>{ review.role }</h1>
+                                            <p className={styles.postdate}>{ review.date }</p>
+                                        </div>
+                                        
+                                        <div className={styles.starcontent}>
+                                            <p><span className={styles.label}>Career: </span>{ review.position }</p>
+                                            <p><span className={styles.label}>Term: </span>{ review.duration }</p>
+                                            <p><span className={styles.label}>Time Commitment: </span>{ club.time }</p>
                                         </div>
 
                                         <section className={styles.reviewcontent}>
                                             <h1>{ review.title }</h1>
                                             <p>{ review.content }</p>
                                         </section>
-
+                                        <h5>
                                         <div className={styles.tags}>
                                             {review.tags.map((tag, i) => (
                                                 <p key={i} className={styles.tag}>{ tag }</p>
                                             ))}
-                                        </div>
+                                        </div></h5>
 
                                         {index !== club.reviews.length - 1 && <hr className={styles.reviewdivider}/>}
 
@@ -143,12 +131,69 @@ const ClubPage = () => {
                     </section>
                 </section>
 
+                <section className={styles.info}>
+                    <img src={ club.image } alt={`${ club.name } logo`}/>
+                    <p className={styles.clubname}>{ club.name }</p>
+
+                    <div className={styles.rating}>
+                        <h3 className={styles.score}>{ club.rating }</h3>
+                        <div className={styles.stars}>
+                            <div className={styles.rating}>
+                                <div className={styles.outof}>
+                                    <h3 className={styles.score}>{ club.social }</h3>
+                                    <h3>/</h3>
+                                    <h3>5</h3>
+                                </div>
+                                <p className={styles.desc}>Social</p>
+                            </div>
+
+                            <div className={styles.rating}>
+                                <div className={styles.outof}>
+                                    <h3 className={styles.score}>{ club.overall }</h3>
+                                    <h3>/</h3>
+                                    <h3>5</h3>
+                                </div>
+                                <p className={styles.desc}>Overall</p>
+                            </div>
+
+                            <div className={styles.rating}>
+                                <h3 className={styles.time}>{ club.time }</h3>
+                                <p className={styles.desc}>Time Cmt</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p className={styles.numreviews}>Based on <span className={ styles.number }> { club.numreviews } reviews</span></p>
+
+                    <ClubLinks
+                        website={club.website}
+                        websiteLabel={club.websiteLabel}
+                        instagram={club.instagram}
+                        instagramHandle={club.instagramHandle}
+                        facebook={club.facebook}
+                        facebookName={club.facebookName}
+                        email={club.email}
+                        username={club.username}
+                    />
+
+                    <div>
+                        <WriteReview onClick={handleOpenModal} />
+                    </div>
+
+                </section>
             </section>
 
             <footer className={styles.footer}>
-                <h1>UniPath</h1>
-                <p>For any questions, concerns, or inquiries, reach us through the <a href="#">feedback</a> form.</p>
+                <h1>ClubReview</h1>
+                <p>For any questions, concerns, or inquiries, reach us through the <a href="ComingSoon.html">feedback</a> form.</p>
             </footer>
+
+            <ReviewModal
+                isOpen={isModalOpen} 
+                onClose={handleCloseModal} 
+                onSubmit={handleSubmitReview} 
+                club={club}
+            />
 
         </section>
     );
