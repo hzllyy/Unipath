@@ -6,6 +6,7 @@ import StarRatingSocial from "./StarRatingSocial";
 import StarRatingOverall from "./StarRatingOverall"
 import TermPick from "./TermPick";
 import TimePick from "./TimePick";
+import TagSelector from "./TagSelector";
 
 const ReviewModal = ({ isOpen, onClose, onSubmit, club }) => {
     const [formData, setFormData] = useState({
@@ -16,7 +17,7 @@ const ReviewModal = ({ isOpen, onClose, onSubmit, club }) => {
         position: "",
         title: "",
         content: "",
-        tags: "",
+        tags: [],
     });
 
     if (!isOpen) return null;
@@ -62,6 +63,11 @@ const ReviewModal = ({ isOpen, onClose, onSubmit, club }) => {
                             placeholder="Talk about your experience! Your review will be anonymous :)"
                             onChange={handleChange}
                             required
+                        />
+
+                        <TagSelector
+                        selectedTags = {formData.tags}
+                        setSelectedTags={(tags) => setFormData({ ...formData, tags})}
                         />
                     </div>
 
