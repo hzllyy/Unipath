@@ -1,36 +1,39 @@
 import React, { useState } from "react";
 import styles from "./TimePick.module.css";
 
-const TimePick = () => {
+const TimePick = ({ value, onChange }) => {
     const [isDropdownVisible, setDropdownVisible] = useState(false);
-    const [selectedTime, setSelectedTime] = useState("Time Commitment");
+    const [selectedTime, setSelectedTime] = useState(value || "Time Commitment");
 
     const handleSelect = (value) => {
         setSelectedTime(value);
         setDropdownVisible(false);
+        if (onChange) onChange(value);  // Update the parent component state
     };
 
-    return(
-
+    return (
         <div>
-             <button onClick={() => setDropdownVisible(!isDropdownVisible)} className={styles.button}>
-            {selectedTime}
-        </button>
+            <button
+                type="button"
+                onClick={() => setDropdownVisible(!isDropdownVisible)}
+                className={`${styles.button} ${selectedTime !== "Time Commitment" ? styles.selected : ""}`}
+            >
+                {selectedTime}
+            </button>
 
-        {isDropdownVisible && (
-            <ul className={styles.options}>
-                {["Low", "Medium", "High"].map((option) => (
-                    <li
-                    key = {option}
-                    onClick={() => handleSelect(option)}
-                    >
-                        {option}
-                    </li>
-                ))}
-            </ul>
-        )}
+            {isDropdownVisible && (
+                <ul className={styles.options}>
+                    {["Low", "Med", "High"].map((option) => (
+                        <li
+                            key={option}
+                            onClick={() => handleSelect(option)}
+                        >
+                            {option}
+                        </li>
+                    ))}
+                </ul>
+            )}
         </div>
-       
     );
 };
 

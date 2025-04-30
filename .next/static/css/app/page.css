@@ -138,7 +138,6 @@ input::placeholder {
 #results{
   color: #582EC3;
   font-weight: 500;
-
   padding-top: 5%;
   text-align: center;
   font-size: 2em;
@@ -148,6 +147,7 @@ input::placeholder {
   display: grid;
   grid-template-columns: repeat(3, minmax(0,1fr)); /* Always 3 columns */
   gap: 20px;
+  align-items: stretch;
   margin-left: 6%;
   margin-right: 6%;
 }
@@ -191,6 +191,10 @@ footer a {
   color: inherit; /* Inherit color from parent */
   text-decoration: none; /* Remove underline */
 }
+
+.link {
+  text-decoration: underline;
+}
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/_components/Home/_components/Club.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/
@@ -202,6 +206,12 @@ footer a {
     cursor: pointer;
   
     filter: drop-shadow(0px 0px 3px #ababab);
+    height: 90%;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
   }
   
   .club img {
@@ -276,4 +286,5 @@ footer a {
     border-radius: 15px;
     cursor: pointer;
   }
+
   

@@ -6,6 +6,12 @@
     cursor: pointer;
   
     filter: drop-shadow(0px 0px 3px #ababab);
+    height: 90%;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
   }
   
   .club img {
@@ -80,4 +86,5 @@
     border-radius: 15px;
     cursor: pointer;
   }
+
   

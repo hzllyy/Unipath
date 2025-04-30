@@ -294,6 +294,16 @@
 .reviewcontent {
   font-size: 1em;
   font-weight: 350;
+
+  width: 100%;
+}
+
+.reviewContent {
+  width: 100%;
+}
+
+#review-text {
+  width: 100%;
 }
 
 .postdate {

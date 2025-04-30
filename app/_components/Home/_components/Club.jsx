@@ -1,8 +1,10 @@
 import React from "react";
 import "./Club.css";
+import Link from 'next/link';
 
-const Club = ({ image, name, social, overall, time, numreviews, description, tags}) => {
+const Club = ({ id, image, name, social, overall, time, numreviews, description, tags}) => {
     return (
+      <Link href={`/clubs/${id}`}>
         <section className="club">
           <img src={ image } alt={`${ name } logo`} className="club-image"/>
           <h2 className="clubname">{ name }</h2>
@@ -46,6 +48,7 @@ const Club = ({ image, name, social, overall, time, numreviews, description, tag
             ))}
           </div>
         </section>
+        </Link>
     );
 };
 

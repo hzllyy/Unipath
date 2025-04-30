@@ -14,6 +14,7 @@ const StarRatingOverall = ({ rating, setRating, className}) => {
                     className={styles.star}
                     color={(hover || rating) >= star? "#582EC3" : "#ccc"}
                     size={22}
+                    cursor="pointer"
                     onMouseEnter={() => setHover(star)}
                     onMouseLeave={() => setHover(0)}
                     onClick={() => setRating(star)}

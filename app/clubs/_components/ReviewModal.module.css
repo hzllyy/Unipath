@@ -62,7 +62,7 @@
 }
 
 .modal input, .modal textarea {
-    border: 1px solid #F3EEFD;
+    border: 2px solid #F3EEFD;
     padding: 0.5% 3% 0.5% 3%;
     border-radius: 20px;
     font-size: 0.90em;
@@ -72,6 +72,12 @@
     text-align: start;
     vertical-align: top;
     line-height: normal;
+}
+
+.modal textarea:focus,
+.modal input:focus {
+  border: 2px solid #582EC3;
+  outline: none;
 }
 
 .modal textarea {
@@ -114,6 +120,10 @@
 .content {
     grid-area: h;
     height: 14em;
+}
+
+.tags {
+    grid-area: i;
 }
 
 .buttons {

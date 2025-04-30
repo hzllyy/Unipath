@@ -37,3 +37,7 @@
 .options li:hover {
     background-color: #F3EEFD;
 }
+
+.selected {
+    color: black;
+}

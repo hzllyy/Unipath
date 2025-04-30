@@ -18,16 +18,6 @@ export default function HomeComponent() {
       <p id="ucd">University of California, Davis</p>
     </div>
 
-      {/* <form id="search">
-        <input type="text" id="searchbar" autoComplete="off" placeholder="Search by club, major, area of interest, etc."></input>
-
-        <input type="submit" id="submit" value="    Search" style={{
-          backgroundImage: "url('/images/mg.png')",
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'top 14px left 60px',
-        }}/>
-      </form> */}
-
       <h2 id="results">Software Development & Design Clubs</h2>
 
       <section id="clubs">
@@ -37,7 +27,7 @@ export default function HomeComponent() {
       </section>
 
       <div id="contact">
-        <p id="create">Can’t find the club you’re looking for? <a href="././ComingSoon.html">Create a club page</a></p>
+        <p id="create">Can’t find the club you’re looking for? <a href="././ComingSoon.html" className="link">Create a club page</a></p>
 
         <p id="spiel">If you like what we do, please ask your peers to use UniPath so we can expand to include clubs in culture, medical, sports, and other interests.
         Interested in having your club seen on UniPath? Reach out to us through our form!</p>
@@ -46,7 +36,7 @@ export default function HomeComponent() {
 
       <footer>
         <h1>ClubReview</h1>
-        <p>For any questions, concerns, or inquiries, reach us through the <a href="ComingSoon.html">feedback.</a></p>
+        <p>For any questions, concerns, or inquiries, reach us through the <a href="ComingSoon.html" className="link">feedback.</a></p>
       </footer>
     </div>
   );
