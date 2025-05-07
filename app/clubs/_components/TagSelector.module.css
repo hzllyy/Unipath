@@ -1,7 +1,13 @@
+.tagSelector {
+    position: relative;
+    width: 182%;
+    padding: 0;
+}
+
 .tagContainer {
     position: absolute;
     background-color: white;
-    width: 91%;
+    width: 100%;
     border-radius: 15px;
     padding: 5px;
 }
@@ -27,22 +33,44 @@
     gap: 2%;
     background-color: white;
     border: 3px solid #EFEAF8;
-    padding: 0 4% 0 4%;
+    padding: 0 0 0 8%;
     border-radius: 30px;
     cursor: pointer;
     line-height: 0.5rem;
 
-    width: 192%;
+    width: 100%;
     margin-top: 3%;
 }
 
 .selectedTag {
     background-color: #EFEAF8;
     padding: 4px 25px 4px 25px;
-    border:none;
+    border: none;
     border-radius: 30px;
     cursor: pointer;
 
     margin: 5px 3px;
     font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .tagSelector {
+        width: 90%;
+        margin-left: -8%;
+    }
+
+    .tagContainer {
+        max-height: 150px; 
+        overflow-y: auto;
+        scrollbar-width: thin;
+    }
+
+    .tagContainer::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .tagContainer::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 3px;
+    }
 }

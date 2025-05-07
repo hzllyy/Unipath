@@ -4,7 +4,7 @@
     width: 95%;
 
     border: 1px solid #F3EEFD;
-    border-radius: 20px;
+    border-radius: 19px;
     padding: 2.75% 0 2.75% 0;
     margin: 0 2% 0 2%;;
     font-size: 0.90em;
@@ -40,4 +40,18 @@
 
 .selected {
     color: black;
+}
+
+@media only screen and (max-width: 650px) {
+    .time {
+        width: 100%;
+        
+    }
+
+    .button {
+        flex-grow: 1;
+        box-sizing: border-box;
+        height: 2.8rem;
+        margin: 1.5% 0 0.75% 2%;
+    }
 }

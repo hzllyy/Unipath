@@ -7,7 +7,7 @@ import ClubLinks from "../_components/ClubLinks";
 import WriteReview from "../_components/WriteReview";
 import ReviewModal from "../_components/ReviewModal";
 import styles from "./clubpage.module.css";
-import { collection, query, where, onSnapshot } from "firebase/firestore";
+import { collection, query, where, onSnapshot, addDoc } from "firebase/firestore";
 import { db } from "../../firebase"
 
 const ClubPage = () => {
@@ -26,7 +26,10 @@ const ClubPage = () => {
             setReviews(reviewData)
         });
 
-        return () => unsubscribe();
+        return() => {
+            if (unsubscribe) unsubscribe();
+        }
+
     }, [id]);
 
     const handleOpenModal = (club) => {
@@ -39,9 +42,22 @@ const ClubPage = () => {
         setSelectedClub(null);
     }
 
-    const handleSubmitReview = (newReview) => {
-        setReviews([newReview, ...reviews]);
-        handleCloseModal();
+
+    const handleSubmitReview = async (newReview) => {
+        try {
+            await addDoc(collection(db, 'reviews'), {
+                ...newReview,
+                clubID: club.id  // Link the review to the current club
+            });
+            console.log('review added!');
+            console.log('club.id:', club.id);
+            console.log('params.id:', id);
+    
+            // Optional: You can skip setReviews here since onSnapshot will pick it up
+            handleCloseModal();
+        } catch (error) {
+            console.error("Error adding review: ", error);
+        }
     };
 
     if (!club) return <h1>Club not found</h1>;
@@ -166,7 +182,13 @@ const ClubPage = () => {
                 </section>
 
                 <section className={styles.info}>
+                <div className={styles.ugh}>
+
+
                     <img src={ club.image } alt={`${ club.name } logo`}/>
+
+                    <div className={styles.ughh}>
+                           
                     <p className={styles.clubname}>{ club.name }</p>
 
                     <div className={styles.rating}>
@@ -195,8 +217,8 @@ const ClubPage = () => {
                                 <p className={styles.desc}>Time Cmt</p>
                             </div>
                         </div>
-                    </div>
-
+                    </div></div> 
+                </div>
                     <p className={styles.numreviews}>Based on <span className={ styles.number }> { numReviews } reviews</span></p>
 
                     <ClubLinks

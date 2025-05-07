@@ -287,8 +287,6 @@
   display: flex;
   align-items: first baseline;
   justify-content: space-between;
-
-  line-height: 10%;
 }
 
 .reviewcontent {
@@ -315,4 +313,144 @@
   color: black;
   font-weight: 500 !important;
   line-height: 1rem;
+}
+
+@media only screen and (max-width: 1180px) {
+
+  .careers {
+    align-items: first baseline;
+  }
+
+  .tags {
+    flex-wrap: wrap;
+    row-gap: 0;
+    gap: 2px;
+  }
+
+  .tag {
+    margin: 2%;
+    gap: 1%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .starcontent {
+    flex-direction: column;
+    padding: 5% 2%;
+  }
+
+  .starcontent p {
+
+    margin: 0;
+    padding: 1%;
+  }
+
+  .careers {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .careers h4 {
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+  .content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .info {
+    order: 1;
+    width: 92%;
+    padding: 5%;
+  }
+
+  .main {
+    order: 2;
+    flex: 1;
+    width: 92%;
+  }
+
+  .about {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .stars {
+    justify-content: start;
+    gap: 8%;
+  }
+
+  .ugh {
+    display: flex;
+    gap: 5%;
+    align-items: end;
+  }
+
+  .ugh img {
+    flex: 1;
+  }
+
+  .ughh {
+    flex: 2;
+  }
+
+  .tags {
+    width: 100%;
+  }
+
+  .clubheader {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .ugh {
+    display: block;
+  }
+  
+  .ugh img {
+    margin: auto;
+    width: 50%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .about {
+    padding: 10%;
+    width: 92%;
+    margin: 20px 0;
+  }
+
+  .reviewheader {
+    flex-direction: column;
+  }
+
+  .reviews {
+    flex-direction: column;
+  }
+
+  .starheaderReview {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+  }
+
+  .scoreReview {
+    font-size: 3rem;
+  }
+
+  .info {
+    margin-top: 10px;
+  }
+
+  .content {
+    gap: 0;
+  }
+
+
 }

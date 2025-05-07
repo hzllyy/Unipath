@@ -290,8 +290,6 @@
   display: flex;
   align-items: first baseline;
   justify-content: space-between;
-
-  line-height: 10%;
 }
 
 .clubpage_reviewcontent__dfyKn {
@@ -320,6 +318,145 @@
   line-height: 1rem;
 }
 
+@media only screen and (max-width: 1180px) {
+
+  .clubpage_careers__sruqg {
+    align-items: first baseline;
+  }
+
+  .clubpage_tags__NNdWp {
+    flex-wrap: wrap;
+    row-gap: 0;
+    gap: 2px;
+  }
+
+  .clubpage_tag___YrSk {
+    margin: 2%;
+    gap: 1%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .clubpage_starcontent__ma3lX {
+    flex-direction: column;
+    padding: 5% 2%;
+  }
+
+  .clubpage_starcontent__ma3lX p {
+
+    margin: 0;
+    padding: 1%;
+  }
+
+  .clubpage_careers__sruqg {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .clubpage_careers__sruqg h4 {
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+  .clubpage_content__JuZn8 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .clubpage_info__KFcCt {
+    order: 1;
+    width: 92%;
+    padding: 5%;
+  }
+
+  .clubpage_main__7BMs0 {
+    order: 2;
+    flex: 1 1;
+    width: 92%;
+  }
+
+  .clubpage_about__rG_n2 {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .clubpage_stars___oB3U {
+    justify-content: start;
+    gap: 8%;
+  }
+
+  .clubpage_ugh__zDLKM {
+    display: flex;
+    gap: 5%;
+    align-items: end;
+  }
+
+  .clubpage_ugh__zDLKM img {
+    flex: 1 1;
+  }
+
+  .clubpage_ughh__4fGxf {
+    flex: 2 1;
+  }
+
+  .clubpage_tags__NNdWp {
+    width: 100%;
+  }
+
+  .clubpage_clubheader__ja6Oy {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .clubpage_ugh__zDLKM {
+    display: block;
+  }
+  
+  .clubpage_ugh__zDLKM img {
+    margin: auto;
+    width: 50%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .clubpage_about__rG_n2 {
+    padding: 10%;
+    width: 92%;
+    margin: 20px 0;
+  }
+
+  .clubpage_reviewheader__d3Ngc {
+    flex-direction: column;
+  }
+
+  .clubpage_reviews__B2LWw {
+    flex-direction: column;
+  }
+
+  .clubpage_starheaderReview__puAIQ {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+  }
+
+  .clubpage_scoreReview__tbiA8 {
+    font-size: 3rem;
+  }
+
+  .clubpage_info__KFcCt {
+    margin-top: 10px;
+  }
+
+  .clubpage_content__JuZn8 {
+    gap: 0;
+  }
+
+
+}
 /*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/ClubLinks.module.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************/
@@ -413,7 +550,7 @@
     border: none;
     background-color: rgb(0, 0, 0, 0);
     color: black;
-    font-size: 2.4vw;
+    font-size: 2rem;
     font-weight: 200;
     height: 1.2em;
     cursor: pointer;
@@ -501,7 +638,7 @@
 }
 
 .ReviewModal_tags__l_G6J {
-    grid-area: i;
+    grid-area: i !important;
 }
 
 .ReviewModal_buttons__JHB8H {
@@ -539,24 +676,86 @@
     color: #582EC3;
 }
 
+@media only screen and (max-width: 1200px) {
+    .ReviewModal_modal__llIPk {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .ReviewModal_modal__llIPk {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .ReviewModal_formContent__g52DJ {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ReviewModal_title__0ZUGe {
+        width: 90%;
+    }
+    
+    .ReviewModal_career__6r0PV {
+        width: 90%
+    
+    }
+    
+    .ReviewModal_role__eb4QS {
+        width: 90%;
+    }
+    
+    .ReviewModal_duration__gimAE {
+        width: 90%;
+    }
+    
+    .ReviewModal_time__V7opj {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .ReviewModal_content__3OLXP {
+        width: 90%;
+        height: 8em;
+        flex-grow: 1;
+    }
+    
+    .ReviewModal_modalheading__xkEQr p {
+        padding: 0 20% 0 5%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .ReviewModal_modal__llIPk {
+        width: 40%;
+    }
+}
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/StarRating.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/
 .StarRating_starContainer__Q_utq {
     background-color: white;
-    border-radius: 18px;
+    border-radius: 19px;
     padding: 1% 2% 1% 2%;
     font-size: 0.90em;
     font-weight: 300;
     width: 92%;
-    height: 2.5em;
-    margin-left: 1.5%;
+    height: 2.35em;
+    margin-left: 2%;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
+@media only screen and (max-width: 650px) {
+    .StarRating_starContainer__Q_utq {
+        margin: 1% 0 !important;
+    }
+
+}
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/TermPick.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************/
@@ -568,7 +767,7 @@
     display: flex;
     background-color: white;
     color: #808080;
-    border-radius: 18px;
+    border-radius: 19px;
     height: 2.9em;
     justify-content: space-between;
     align-items: center;
@@ -622,6 +821,14 @@
 .TermPick_endDropdown__W39TV {
     left: 50%;
 }
+
+@media only screen and (max-width: 650px) {
+    .TermPick_termInput__7NF_r {
+        width: 106%;
+        margin-left: -3%;
+        margin-top: 1%;
+    }
+}
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/TimePick.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************/
@@ -631,7 +838,7 @@
     width: 95%;
 
     border: 1px solid #F3EEFD;
-    border-radius: 20px;
+    border-radius: 19px;
     padding: 2.75% 0 2.75% 0;
     margin: 0 2% 0 2%;;
     font-size: 0.90em;
@@ -668,13 +875,33 @@
 .TimePick_selected__BudMT {
     color: black;
 }
+
+@media only screen and (max-width: 650px) {
+    .TimePick_time__dNz9g {
+        width: 100%;
+        
+    }
+
+    .TimePick_button__DgAPJ {
+        flex-grow: 1;
+        box-sizing: border-box;
+        height: 2.8rem;
+        margin: 1.5% 0 0.75% 2%;
+    }
+}
 /*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/TagSelector.module.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************/
+.TagSelector_tagSelector___Mli0 {
+    position: relative;
+    width: 182%;
+    padding: 0;
+}
+
 .TagSelector_tagContainer___C5iF {
     position: absolute;
     background-color: white;
-    width: 91%;
+    width: 100%;
     border-radius: 15px;
     padding: 5px;
 }
@@ -700,19 +927,19 @@
     gap: 2%;
     background-color: white;
     border: 3px solid #EFEAF8;
-    padding: 0 4% 0 4%;
+    padding: 0 0 0 8%;
     border-radius: 30px;
     cursor: pointer;
     line-height: 0.5rem;
 
-    width: 192%;
+    width: 100%;
     margin-top: 3%;
 }
 
 .TagSelector_selectedTag__8OYGH {
     background-color: #EFEAF8;
     padding: 4px 25px 4px 25px;
-    border:none;
+    border: none;
     border-radius: 30px;
     cursor: pointer;
 
@@ -720,3 +947,24 @@
     font-size: 0.9rem;
 }
 
+@media only screen and (max-width: 650px) {
+    .TagSelector_tagSelector___Mli0 {
+        width: 90%;
+        margin-left: -8%;
+    }
+
+    .TagSelector_tagContainer___C5iF {
+        max-height: 150px; 
+        overflow-y: auto;
+        scrollbar-width: thin;
+    }
+
+    .TagSelector_tagContainer___C5iF::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .TagSelector_tagContainer___C5iF::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 3px;
+    }
+}

@@ -162,7 +162,8 @@ input::placeholder {
 }
 
 footer {
-  background-color: #582EC3;
+  background: rgb(224,136,245);
+  background: linear-gradient(90deg, rgba(224,136,245,1) 0%, rgba(55,24,183,1) 100%);
   padding: 20px;
   color: white;
   text-align: center;
@@ -194,6 +195,70 @@ footer a {
 
 .link {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 950px) {
+
+#firstLine {
+  font-size: 1.7rem;
+}
+
+#rate {
+  padding-top: 10%;
+  font-size: 1.7rem;
+}
+
+#ucd {
+  font-size: 2.5rem;
+}
+
+#results {
+  font-size: 1.7rem;
+}
+
+#clubs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+  #feedback-txt {
+    display: none;
+  }
+
+  #ucd {
+    padding: 0 10%;
+  }
+
+  #results {
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #firstLine {
+    font-size: 1.5rem;
+  }
+  
+  #rate {
+    padding-top: 16%;
+    font-size: 1.5rem;
+  }
+  
+  #ucd {
+    font-size: 2.2rem;
+  }
+  
+  #results {
+    font-size: 1.5rem;
+  }
+
+  #clubs {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/_components/Home/_components/Club.css ***!
@@ -272,6 +337,12 @@ footer a {
   .description {
     margin-top: 1%;
     font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
   }
   
   .categories {
@@ -287,4 +358,18 @@ footer a {
     cursor: pointer;
   }
 
-  
+  @media only screen and (max-width: 1150px) {
+    .score {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .clubname {
+      font-size: 1.5rem;
+    }
+
+    .score {
+      font-size: 1.2rem;
+    }
+  }

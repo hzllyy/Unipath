@@ -72,6 +72,12 @@
   .description {
     margin-top: 1%;
     font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
   }
   
   .categories {
@@ -87,4 +93,18 @@
     cursor: pointer;
   }
 
-  
+  @media only screen and (max-width: 1150px) {
+    .score {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .clubname {
+      font-size: 1.5rem;
+    }
+
+    .score {
+      font-size: 1.2rem;
+    }
+  }

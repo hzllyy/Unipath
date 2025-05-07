@@ -12,7 +12,7 @@ const TimePick = ({ value, onChange }) => {
     };
 
     return (
-        <div>
+        <div className={styles.time}>
             <button
                 type="button"
                 onClick={() => setDropdownVisible(!isDropdownVisible)}
