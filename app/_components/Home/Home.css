@@ -60,7 +60,7 @@ body {
 
 #feedback {
   display: flex;
-  align-items: center;
+  align-items: start;
   padding: 0;
 }
 
@@ -83,6 +83,7 @@ body {
 
   height: 2em;
   width: 10em;
+  margin-top: 9%;
 
   cursor: pointer;
 }

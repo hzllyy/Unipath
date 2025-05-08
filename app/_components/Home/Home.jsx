@@ -11,7 +11,7 @@ export default function HomeComponent() {
           <p id="clubreview">ClubReview</p>
           <div id="feedback">
             <p id="feedback-txt">Share your thoughts on ClubReview.</p>
-            <button id="feedback-btn">Feedback</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIKK8G5mvOzDTj6HymIwQ8379AY2kytxzN1mVxyoImV4L8Rw/viewform"><button id="feedback-btn">Feedback</button></a>
           </div>
         </div>
       <p id="rate">Rate Clubs in</p>
@@ -36,7 +36,7 @@ export default function HomeComponent() {
 
       <footer>
         <h1>ClubReview</h1>
-        <p>For any questions, concerns, or inquiries, reach us through the <a href="ComingSoon.html" className="link">feedback.</a></p>
+        <p>For any questions, concerns, or inquiries, reach us through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIKK8G5mvOzDTj6HymIwQ8379AY2kytxzN1mVxyoImV4L8Rw/viewform" className="link">feedback.</a></p>
       </footer>
     </div>
   );

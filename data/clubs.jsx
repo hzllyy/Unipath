@@ -66,7 +66,47 @@ const clubs = [
                 tags: ["Product Management", "Teamwork", "UX Design"]
             }
         ]
-    }
+    },
+    {
+        id: "aisc",
+        name: "AISC",
+        image: "/images/di.png",
+        about: "<p>We're a software development and UX design agency at UC Davis, building real-world projects for industry clients and the local community.</p>",
+        website: "https://humansforai.com/aisc-davis/",
+        websiteLabel: "humansforai.com",
+        instagram: "https://www.instagram.com/aiscdavis/",
+        instagramHandle: "@aiscdavis",
+        email: "mailto:asicdavis@humansforai.com",
+        careers: ["Frontend Developer", "Backend Developer", "Full-Stack Engineer"],
+        tags: ["Community", "UI Design", "UX Design"],
+        reviews: []
+    },
+    {
+        id: "gdsc",
+        name: "Google Developer Student Club",
+        image: "/images/googledev.png",
+        about: "<p>GDSC is a program powered by Google Developers designed for students of all backgrounds to learn a wide variety of skills + technologies!</p>",
+        website: "https://bento.me/gdscdavis?fbclid=PAZXh0bgNhZW0CMTEAAaaOMeJROqP6jiXaHtmcvQnOO2Jk7u8H0PegPZWPwhjxTR7a2gcr6sfyyPQ_aem_6dFj5J18NJW6n9msTPuYXA",
+        websiteLabel: "bento.me/gdscdavis",
+        instagram: "https://www.instagram.com/gdsc_ucdavis/",
+        instagramHandle: "@gdsc_ucdavis",
+        careers: ["Frontend Developer", "Backend Developer", "Full-Stack Engineer"],
+        tags: ["Design", "UI Design", "UX Design"],
+        reviews: []
+    },
+    {
+        id: "include",
+        name: "#include",
+        image: "/images/include.png",
+        about: "<p>Include is a student-run organization at UC Davis that buiilds websites and mobile apps for local organizations in the Sacramento and Davis area.</p>",
+        website: "https://humansforai.https://includedavis.com/?fbclid=PAZXh0bgNhZW0CMTEAAadoOzww9bngo2icjXpc5EavjjqWLYJc9rRkochiLxQlIeJL4EIrVvuXE7GP1Q_aem_fqpINLNcvgR9KpcQ0Lkilg/aisc-davis/",
+        websiteLabel: "includedavis.com",
+        instagram: "https://www.instagram.com/includedavis/",
+        instagramHandle: "@includedavis",
+        careers: ["Frontend Developer", "UI/UX Designer", "Full-Stack Engineer"],
+        tags: ["Web Dev", "UI Design", "UX Design"],
+        reviews: []
+    },
 ];
 
 export default clubs;

@@ -90,7 +90,7 @@ const ClubPage = () => {
             <header className={styles.clubheader}>
                 <p className={styles.unipath}>ClubReview</p>
 
-                <button className={styles.feedback}>Feedback</button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIKK8G5mvOzDTj6HymIwQ8379AY2kytxzN1mVxyoImV4L8Rw/viewform"><button className={styles.feedback}>Feedback</button></a>
             </header>
 
             <section className={styles.content}>
@@ -241,7 +241,7 @@ const ClubPage = () => {
 
             <footer className={styles.footer}>
                 <h1>ClubReview</h1>
-                <p>For any questions, concerns, or inquiries, reach us through the <a href="ComingSoon.html">feedback</a> form.</p>
+                <p>For any questions, concerns, or inquiries, reach us through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIKK8G5mvOzDTj6HymIwQ8379AY2kytxzN1mVxyoImV4L8Rw/viewform">feedback</a> form.</p>
             </footer>
 
             <ReviewModal
