@@ -49,11 +49,8 @@ const ClubPage = () => {
                 ...newReview,
                 clubID: club.id  // Link the review to the current club
             });
-            console.log('review added!');
-            console.log('club.id:', club.id);
-            console.log('params.id:', id);
+            setReviews(prevReviews => [newReview, ...prevReviews]);
     
-            // Optional: You can skip setReviews here since onSnapshot will pick it up
             handleCloseModal();
         } catch (error) {
             console.error("Error adding review: ", error);
