@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
+import Link from 'next/link';
 import clubs from "../../../data/clubs";
 import ClubLinks from "../_components/ClubLinks";
 import WriteReview from "../_components/WriteReview";
@@ -23,13 +24,18 @@ const ClubPage = () => {
         const q = query(collection(db, 'reviews'), where('clubID', '==', id));
         const unsubscribe = onSnapshot(q, (snapshot) => {
             const reviewData = snapshot.docs.map(doc => doc.data());
-            setReviews(reviewData)
+            // Sort reviews by timestamp in descending order (newest first)
+            const sortedReviews = reviewData.sort((a, b) => {
+                const timeA = new Date(a.timestamp || a.date);
+                const timeB = new Date(b.timestamp || b.date);
+                return timeB - timeA;
+            });
+            setReviews(sortedReviews);
         });
 
         return() => {
             if (unsubscribe) unsubscribe();
         }
-
     }, [id]);
 
     const handleOpenModal = (club) => {
@@ -45,12 +51,15 @@ const ClubPage = () => {
 
     const handleSubmitReview = async (newReview) => {
         try {
+            const now = new Date();
+            const displayDate = now.toLocaleString('default', { month: 'short', year: 'numeric' });
+            
             await addDoc(collection(db, 'reviews'), {
                 ...newReview,
-                clubID: club.id  // Link the review to the current club
+                clubID: club.id,  // Link the review to the current club
+                date: displayDate,
+                timestamp: now.toISOString()  // Add a timestamp for sorting
             });
-            setReviews(prevReviews => [newReview, ...prevReviews]);
-    
             handleCloseModal();
         } catch (error) {
             console.error("Error adding review: ", error);
@@ -78,14 +87,17 @@ const ClubPage = () => {
                 count[time] = (count[time] || 0 ) + 1;
             }
         });
-        return Object.entries(count).reduce((a, b) => a[1] > b[1] ? a : b)[0];
+        // Check if we have any time data before reducing
+        return Object.entries(count).length > 0 
+            ? Object.entries(count).reduce((a, b) => a[1] > b[1] ? a : b)[0]
+            : "-";
     };
 
     return (
         <section className={styles.clubpage}>
 
             <header className={styles.clubheader}>
-                <p className={styles.unipath}>ClubReview</p>
+                <p className={styles.unipath}><Link href="/">ClubReview</Link></p>
 
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIKK8G5mvOzDTj6HymIwQ8379AY2kytxzN1mVxyoImV4L8Rw/viewform"><button className={styles.feedback}>Feedback</button></a>
             </header>
@@ -152,21 +164,30 @@ const ClubPage = () => {
                                         </div>
                                         
                                         <div className={styles.starcontent}>
-                                            <p><span className={styles.label}>Career: </span>{ review.career }</p>
-                                            <p><span className={styles.label}>Term: </span>{ review.duration }</p>
-                                            <p><span className={styles.label}>Time Commitment: </span>{ review.time }</p>
+                                            {review.career && (
+                                                <p><span className={styles.label}>Career: </span>{review.career}</p>
+                                            )}
+                                            {review.duration && (
+                                                <p><span className={styles.label}>Term: </span>{review.duration}</p>
+                                            )}
+                                            {review.time && (
+                                                <p><span className={styles.label}>Time Commitment: </span>{review.time}</p>
+                                            )}
                                         </div>
 
                                         <section className={styles.reviewcontent}>
-                                            <h1>{ review.title }</h1>
-                                            <p id="review-text">{ review.content }</p>
+                                            <h1>{review.title}</h1>
+                                            <p id="review-text">{review.content}</p>
                                         </section>
-                                        <h5>
-                                        <div className={styles.tags}>
-                                            {review.tags.map((tag, i) => (
-                                                <p key={i} className={styles.tag}>{ tag }</p>
-                                            ))}
-                                        </div></h5>
+                                        {review.tags && review.tags.length > 0 && (
+                                            <h5>
+                                                <div className={styles.tags}>
+                                                    {review.tags.map((tag, i) => (
+                                                        <p key={i} className={styles.tag}>{tag}</p>
+                                                    ))}
+                                                </div>
+                                            </h5>
+                                        )}
 
                                         {index !== reviews.length - 1 && <hr className={styles.reviewdivider}/>}
 

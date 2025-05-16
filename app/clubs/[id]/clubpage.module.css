@@ -43,7 +43,7 @@
   text-align: center;
 }
 
-.unipath {
+.unipath a{
   color: white;
   font-weight: 500;
   font-size: 2em;
@@ -313,6 +313,10 @@
   color: black;
   font-weight: 500 !important;
   line-height: 1rem;
+}
+
+.footer a {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1180px) {

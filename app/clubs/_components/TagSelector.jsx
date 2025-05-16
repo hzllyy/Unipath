@@ -24,7 +24,7 @@ const TagSelector = ({ selectedTags, setSelectedTags }) => {
       setSelectedTags(selectedTags.filter((t) => t !== tag));
     } else {
         // only add the tag if less than 4 tags are selected
-        if (selectedTags.length < 2) {
+        if (selectedTags.length < 3) {
             setSelectedTags([...selectedTags, tag]);
         }
     }

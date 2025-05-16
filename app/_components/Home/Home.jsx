@@ -27,7 +27,7 @@ export default function HomeComponent() {
       </section>
 
       <div id="contact">
-        <p id="create">Can’t find the club you’re looking for? <a href="././ComingSoon.html" className="link">Create a club page</a></p>
+        <p id="create">Can’t find the club you’re looking for? <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIKK8G5mvOzDTj6HymIwQ8379AY2kytxzN1mVxyoImV4L8Rw/viewform" className="link">Create a club page</a></p>
 
         <p id="spiel">If you like what we do, please ask your peers to use UniPath so we can expand to include clubs in culture, medical, sports, and other interests.
         Interested in having your club seen on UniPath? Reach out to us through our form!</p>

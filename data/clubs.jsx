@@ -40,32 +40,6 @@ const clubs = [
         username: "designinteractive@gmail.com",
         careers: ["UI Designer", "UX Designer", "Product Designer"],
         tags: ["Human Centered Design", "UI Design", "UX Design"],
-        reviews: [
-            {
-                social: 4,
-                overall: 5,
-                role: "Fellowship Member",
-                duration: "Fall 2024 - Spring 2025",
-                career: "Graphic Designer",
-                time: "Med",
-                date: "Aug. 2023",
-                title: "Incredible Experience",
-                content: "I joined Design Interactive my freshman year at UC Davis and it was an incredible experience! Upon entering UC Davis I was undeclared but upon completing their 3-week design sprint I learned valuable skills such as wire-framing, ux research methods, and prototyping.",
-                tags: ["Beginner Friendly", "Challenging", "Teamwork"]
-            },
-            {
-                social: 4,
-                overall: 5,
-                role: "Cohort Member",
-                duration: "Fall 2024",
-                career: "User Experience Designer",
-                time: "Med",
-                date: "June 2023",
-                title: "Challenging and Fun!",
-                content: "Prior to becoming a Design Lead at Design Interactive, I was a 2x cohort participant. My experience as a cohort member challenged me to work with a variety of teams and take on different roles in the design process.",
-                tags: ["Product Management", "Teamwork", "UX Design"]
-            }
-        ]
     },
     {
         id: "aisc",

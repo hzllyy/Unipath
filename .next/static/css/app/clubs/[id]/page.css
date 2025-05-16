@@ -46,7 +46,7 @@
   text-align: center;
 }
 
-.clubpage_unipath__tLqIT {
+.clubpage_unipath__tLqIT a{
   color: white;
   font-weight: 500;
   font-size: 2em;
@@ -316,6 +316,10 @@
   color: black;
   font-weight: 500 !important;
   line-height: 1rem;
+}
+
+.clubpage_footer__qzee6 a {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1180px) {
@@ -832,22 +836,35 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/clubs/_components/TimePick.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************/
+.TimePick_time__dNz9g {
+    width: 100%;
+    position: relative;
+}
+
 .TimePick_button__DgAPJ {
-    background-color: white; 
-
+    background-color: white;
     width: 95%;
-
     border: 1px solid #F3EEFD;
     border-radius: 19px;
-    padding: 2.75% 0 2.75% 0;
-    margin: 0 2% 0 2%;;
+    padding: 2.75% 0 2.75% 15px;
+    margin: 0 2%;
     font-size: 0.90em;
     font-family: "Poppins";
-
     cursor: pointer;
     text-align: left;
-    padding-left: 15px;
     color: #808080;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 1em;
+}
+
+.TimePick_button__DgAPJ:focus {
+    outline: none;
+    border-color: #582EC3;
 }
 
 .TimePick_options__UG7Q8 {
@@ -879,7 +896,6 @@
 @media only screen and (max-width: 650px) {
     .TimePick_time__dNz9g {
         width: 100%;
-        
     }
 
     .TimePick_button__DgAPJ {
@@ -894,8 +910,9 @@
   \****************************************************************************************************************************************************************************************************************************************************************************************/
 .TagSelector_tagSelector___Mli0 {
     position: relative;
-    width: 182%;
+    width: 180%;
     padding: 0;
+    margin-left: 2%;
 }
 
 .TagSelector_tagContainer___C5iF {
@@ -904,6 +921,8 @@
     width: 100%;
     border-radius: 15px;
     padding: 5px;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .TagSelector_hidden__5Vcvw {
@@ -913,12 +932,12 @@
 .TagSelector_tagContainer___C5iF button {
     background-color: #EFEAF8;
     padding: 5px 25px 5px 25px;
-    border:none;
+    border: none;
     border-radius: 30px;
     cursor: pointer;
-
     margin: 5px 3px;
     font-family: "Poppins";
+    white-space: nowrap;
 }
 
 .TagSelector_tagdiv__8O0IR {
@@ -927,24 +946,35 @@
     gap: 2%;
     background-color: white;
     border: 3px solid #EFEAF8;
-    padding: 0 0 0 8%;
+    padding: 0 0 0 5%;
     border-radius: 30px;
     cursor: pointer;
     line-height: 0.5rem;
-
     width: 100%;
-    margin-top: 3%;
+    margin-top: 1.5%;
+    min-height: 42px;
+}
+
+.TagSelector_selected__d3cQh {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
 }
 
 .TagSelector_selectedTag__8OYGH {
     background-color: #EFEAF8;
-    padding: 4px 25px 4px 25px;
+    padding: 10px 25px 10px 25px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-
-    margin: 5px 3px;
+    margin: 2px 3px;
     font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.TagSelector_taglabel__3Z4cP {
+    white-space: nowrap;
 }
 
 @media only screen and (max-width: 650px) {

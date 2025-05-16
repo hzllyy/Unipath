@@ -95,9 +95,8 @@ const ReviewModal = ({ isOpen, onClose, onSubmit, club }) => {
                             className={styles.career}
                             name="career"
                             value={formData.career}
-                            placeholder="* Your career interest"
+                            placeholder="Your career interest"
                             onChange={handleChange}
-                            required
                         />
 
                         <input
@@ -115,13 +114,13 @@ const ReviewModal = ({ isOpen, onClose, onSubmit, club }) => {
                             name="duration"
                             value={formData.duration}
                             onChange={(value) => setFormData({ ...formData, duration: value })}
-                            required
                         />
 
                         <TimePick
                             className={styles.time}
                             name="time"
                             value={formData.time}
+                            placeholder="* Time commitment"
                             onChange={(value) => setFormData({ ...formData, time: value })}
                             required
                         />
@@ -130,7 +129,7 @@ const ReviewModal = ({ isOpen, onClose, onSubmit, club }) => {
                             className={styles.content}
                             name="content"
                             value={formData.content}
-                            placeholder="* Talk about your experience! Your review will be anonymous :)"
+                            placeholder="* Talk about your experience! Your review will be anonymous, but please remember to be respectful!"
                             onChange={handleChange}
                             required
                         />
